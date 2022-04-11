@@ -1,0 +1,110 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+  
+    &-drawer {
+      right: 0;
+      position: absolute;
+      width: 385px;
+      height: 100%;
+      background-color: white;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+  
+      h2 {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        img {
+          cursor: pointer;
+          transition:  transform .2s ease-in-out, filter .2s ease-in-out;
+        
+          &:hover {
+            transform: scale(1.1);
+            filter: brightness(0.9);
+          }
+        }
+      }
+  
+      .items {
+        flex: 1;
+        overflow: auto;
+        margin-bottom: 15px;
+        padding-right: 10px;
+        .cartItem {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 15px;
+          padding: 20px;
+          border: 1px solid #F3F3F3;
+          border-radius: 20px;
+          margin-bottom: 20px;
+    
+          &-img {
+            width: 70px;
+            height: 70px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+    
+          p {
+            margin-bottom: 5px;
+            font-size: 14px;
+          }
+    
+          .delete {
+            opacity: 0.5;
+            cursor: pointer;
+            transition:  filter .2s ease-in-out, opacity .3s ease-in-out;
+            &:hover {
+              opacity: 1;
+              filter: brightness(0.9);
+            }
+          }
+        }
+      }
+  
+    }
+  
+    .cardTotal {
+      ul {
+        margin-bottom: 25px;
+  
+        li {
+          display: flex;
+          align-items: baseline;
+          margin-bottom: 20px;
+          div {
+            flex: 1;
+            height: 1px;
+            border-bottom: 1px dashed #DFDFDF;
+            margin: 0px 5px;
+          }
+        }
+      }
+  
+      .greenButton {
+        position: relative;
+        &:hover {
+          img {
+            transform: translateX(5px);
+          }
+        }
+        img {
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          transition: transform .15s ease-in-out;
+        }
+      }
+    }
+  
+  }

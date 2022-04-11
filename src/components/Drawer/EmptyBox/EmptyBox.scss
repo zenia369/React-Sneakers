@@ -1,0 +1,27 @@
+.empty {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapp {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        &__header {
+            margin-bottom: 40px;
+            img {
+                margin-bottom: 0.2rem;
+            }
+            h3 {
+                font-size: 22px;
+                color: black;
+                margin-bottom: 10px;
+            }
+            p {
+                width: 17em;
+                color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+.active-link {
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    background-color: aliceblue;
+}

@@ -1,0 +1,27 @@
+.btn-close {
+    color: white;
+    width: 100%;
+    padding: 17px 0;
+    background-color: #9DD458;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    img {
+        transform: rotateZ(180deg) translate(170%, -10%);
+        position: absolute;
+        transition: transform .3s ease-in-out;
+    }
+
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        background-color: darken($color: #9DD458, $amount: 10);
+    }
+    &:hover img {
+        transform: rotateZ(180deg) translate(240%, -10%);
+    }
+}

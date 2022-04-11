@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter" ,system-ui;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E7F6FF;
+}
+
+.wrapper {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+.greenButton {
+  width: 325px;
+  height: 55px;
+  background-color: #9DD458;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: background-color .2s ease-in;
+  transition: background-color .2s ease-in;
+}
+
+.greenButton:hover {
+  background-color: #95bd64;
+}
+
+.greenButton:active {
+  background-color: #6f953f;
+}
+
+section.content {
+  padding: 45px 60px;
+}
+
+section.content h1 {
+  font-size: 32px;
+}
+
+section.content .wrapp-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+section.content .wrapp-search .search {
+  border: 1px solid #F3F3F3;
+  border-radius: 15px;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: text;
+  position: relative;
+}
+
+section.content .wrapp-search .search .clear {
+  position: absolute;
+  right: 0;
+  right: 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+section.content .wrapp-search .search input {
+  border: 0;
+  padding: 15px 15px;
+  font-size: 16px;
+}
+
+section.content .wrapp-search .search input:focus-visible {
+  outline: none;
+}
+
+section.content .sneakers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=index.css.map */

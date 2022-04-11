@@ -1,0 +1,78 @@
+.img-btn:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.card {
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+  padding: 30px;
+  width: 210px;
+  background: #fefefe;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, transform .3s ease-in-out, -webkit-box-shadow .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.card .like {
+  position: absolute;
+  cursor: pointer;
+}
+
+.card h5 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.card__button-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__button-price p {
+  font-size: 13px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.card__button-price b {
+  font-size: 15px;
+}
+
+.card__button-btn {
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+/*# sourceMappingURL=Card.css.map */

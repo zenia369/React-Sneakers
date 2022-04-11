@@ -1,0 +1,36 @@
+.btn-close {
+  color: white;
+  width: 100%;
+  padding: 17px 0;
+  background-color: #9DD458;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+}
+
+.btn-close img {
+  -webkit-transform: rotateZ(180deg) translate(170%, -10%);
+          transform: rotateZ(180deg) translate(170%, -10%);
+  position: absolute;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.btn-close:focus {
+  outline: none;
+}
+
+.btn-close:hover {
+  background-color: #85c633;
+}
+
+.btn-close:hover img {
+  -webkit-transform: rotateZ(180deg) translate(240%, -10%);
+          transform: rotateZ(180deg) translate(240%, -10%);
+}
+/*# sourceMappingURL=ButtonGoBack.css.map */
