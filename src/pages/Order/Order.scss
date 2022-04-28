@@ -1,0 +1,25 @@
+.Order {
+    padding: 45px 60px;
+
+    button.btn-back {
+        border: none;
+        cursor: pointer;
+        background: transparent;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 40px;
+        
+        img:hover {
+            filter: brightness(.9);
+        }
+    }
+    .content {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}

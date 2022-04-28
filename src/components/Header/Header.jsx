@@ -20,7 +20,7 @@ const Header = props => {
             <ul className="headerRight">
                 <li onClick={props.onClickOpenCart}>
                     <img width={18} height={18} src="/img/shops.svg" alt='shoes' />
-                    <span>133 грн.</span>
+                    <span>{props.price} грн.</span>
                 </li>
                 <li className={'/favorites' === path ? 'active-link' : ''}>
                     <Link to='/favorites'>

@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Favorites.css'
 
 import {Link, useNavigate} from 'react-router-dom';
 
 import Card from "../../components/Card/Card";
-import EmptyFavorites from "./EmptyFavorites/EmptyFavorites";
+import checkIsSame from "../../helpers/checkIsAdd";
+import EmptyBoxForReactions from "../../components/EmptyBoxForReactions/EmptyBoxForReactions";
 
-const Favorites = ({items, HandleOnAddCart, onDeleteCartItem,...props}) => {
-    const navigation = useNavigate()
+const Favorites = ({items, favorites = [], HandleOnAddCart, onDeleteCartItem,...props}) => {
+    const navigation = useNavigate();
+
+    useEffect(() => {
+        document.title = 'React | Favorites sneakers';
+    }, [])
+
+    useEffect(() => {
+        const {arr1: updateData} = checkIsSame(items, favorites, {favorites:true})
+        favorites = updateData
+    }, [items])
 
     const handleGoBack = () => {
         navigation('/')
     }
+
+
 
     return (
         <section className="favorites">
@@ -26,14 +38,15 @@ const Favorites = ({items, HandleOnAddCart, onDeleteCartItem,...props}) => {
 
             <div className="content">
                 {
-                    items.length > 0
-                    ? items.map((el, index) => {
+                    favorites.length > 0
+                    ? favorites.map((el, index) => {
                             return (
                                 <Card
                                 key={index}
                                 {...el}
                                 srcNum={el.srcNum}
                                 favorites={true}
+                                add={true}
                                 onDeleteFavoriteItem={props.onDeleteFavoriteItem}
                                 isDelete={false}
                                 onClickAdd={HandleOnAddCart}
@@ -41,7 +54,12 @@ const Favorites = ({items, HandleOnAddCart, onDeleteCartItem,...props}) => {
                                 />
                             )
                         })
-                    : <EmptyFavorites goBack={handleGoBack} />
+                    : <EmptyBoxForReactions 
+                        goBack={handleGoBack} 
+                        title={'Немає уподобайків'} 
+                        text ={'поверніться та оберіть те що сподобається'}
+                        imgSrc={'./img/emoji-favorite.svg'}
+                    />
                 }
             </div>
         </section>

@@ -1,4 +1,4 @@
-.emtpyBoxFavorite {
+.emtpyBoxReaction {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -7,16 +7,16 @@
     gap: 20px;
 }
 
-.emptyFavorite {
+.emptyReaction {
     text-align: center;
 
 }
-.emptyFavorite h2 {
+.emptyReaction h2 {
     margin-top: 20px;
     font-weight: 600;
     font-size: 24px;
 }
-.emptyFavorite h4 {
+.emptyReaction h4 {
     margin-top: 10px;
     font-size: 16px;
     opacity: 0.4;
@@ -24,7 +24,7 @@
 }
 
 
-.btnFavorite {
+.btnReaction {
     width: 290px;
     height: 60px;
 }
