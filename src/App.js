@@ -41,10 +41,10 @@ function App() {
       axios.get('https://61f3f1b710f0f7001768c762.mockapi.io/favorites')
         .then(res => setFavorites(res.data))
         .catch(() => setFavorites([]))
-        setIsLoading(false)
     } catch (error) {
       console.warn('Error in App first render', error.message);
     }
+    setIsLoading(false)
   },[]);
 
   useEffect(() => {
