@@ -52,9 +52,9 @@ const Home = ({
         <div className="wrapp-search">
           <h1>{searchValue ? `Пошук за: "${searchValue}"` : 'Всі кросівки'}</h1>
           <div className="search">
-            <img src="/img/loop.svg" alt="Search"/>
+            <img src="img/loop.svg" alt="Search"/>
             <input onChange={onChangeImput} value={searchValue} placeholder="Пошук..." />
-            {searchValue && <img onClick={() => setSearchValue('')} className="clear" src="/img/delete.svg" alt="clear" />}
+            {searchValue && <img onClick={() => setSearchValue('')} className="clear" src="img/delete.svg" alt="clear" />}
           </div>
         </div>
 

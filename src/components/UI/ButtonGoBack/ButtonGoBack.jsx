@@ -4,7 +4,7 @@ import './ButtonGoBack.css';
 const ButtonGoBack = ({handleClick}) => {
     return (
         <button onClick={handleClick} className="btn-close">
-            <img src="/img/arrow.svg" alt="Arrow"></img>
+            <img src="img/arrow.svg" alt="Arrow"></img>
             Повернутись назад
         </button>
     )

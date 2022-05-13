@@ -34,16 +34,16 @@ const Card = ({onClickFavorite, onDeleteFavoriteItem, onClickAdd, onRemove, load
                     ? <MyLoader/>
                     : <>
                         <div className="like" onClick={favorite ? HandleOnRemoveFavorite : HandleOnClickFavorite}>
-                            <img className="img-btn" src={favorite ? "/img/like-active.svg" : "/img/like.svg"} alt="like-btn" />
+                            <img className="img-btn" src={favorite ? "img/like-active.svg" : "img/like.svg"} alt="like-btn" />
                         </div>
-                        <img width={133} height={112} src={`/img/shoes/${props.srcNum}.svg`} alt="Sneakers" />
+                        <img width={133} height={112} src={`img/shoes/${props.srcNum}.svg`} alt="Sneakers" />
                         <h5>{props.name}</h5>
                         <div className="card__button">
                             <div className="card__button-price">
                                 <p>Ціна:</p>
                                 <b>{props.price}грн</b>
                             </div>
-                            <button onClick={props.add ? HandleOnRemove : HandleOnClickAdd} className="card__button-btn"><img className="img-btn" src={props.add ? "/img/plus-active.svg" : "/img/plus.svg"} alt="plus" /></button>
+                            <button onClick={props.add ? HandleOnRemove : HandleOnClickAdd} className="card__button-btn"><img className="img-btn" src={props.add ? "img/plus-active.svg" : "img/plus.svg"} alt="plus" /></button>
                         </div>
                     </>
             }

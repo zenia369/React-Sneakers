@@ -20,7 +20,7 @@ const Favorites = ({items, favorites = [], HandleOnAddCart, onDeleteCartItem,...
     }, [items])
 
     const handleGoBack = () => {
-        navigation('/')
+        navigation('React-Sneakers')
     }
 
 
@@ -28,8 +28,8 @@ const Favorites = ({items, favorites = [], HandleOnAddCart, onDeleteCartItem,...
     return (
         <section className="favorites">
             <div className="header">
-                <Link to='/'>
-                    <img width={40} height={40} src="/img/squareGoBack.svg" alt="go back" />
+                <Link to='React-Sneakers'>
+                    <img width={40} height={40} src="img/squareGoBack.svg" alt="go back" />
                 </Link>
                 <h2>
                     Всі мої збереженні кросівки
@@ -58,7 +58,7 @@ const Favorites = ({items, favorites = [], HandleOnAddCart, onDeleteCartItem,...
                         goBack={handleGoBack} 
                         title={'Немає уподобайків'} 
                         text ={'поверніться та оберіть те що сподобається'}
-                        imgSrc={'./img/emoji-favorite.svg'}
+                        imgSrc={'img/emoji-favorite.svg'}
                     />
                 }
             </div>

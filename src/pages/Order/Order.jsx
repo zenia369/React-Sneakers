@@ -20,7 +20,7 @@ const Order = ({orders = [], ...props}) => {
         <section className="Order">
             <div className="header">
                 <button className="btn-back" onClick={handleGoBack}>
-                    <img width={40} height={40} src="/img/squareGoBack.svg" alt="go back" />
+                    <img width={40} height={40} src="img/squareGoBack.svg" alt="go back" />
                 </button>
                 <h2>Все те що я купляв</h2>
             </div>
@@ -31,7 +31,7 @@ const Order = ({orders = [], ...props}) => {
                         goBack={handleGoBack} 
                         title={'Ви ще нічого не купляли'}
                         text={'зробіть замовлення щоб тут щось появилось'}
-                        imgSrc={'./img/emoji-order.svg'}
+                        imgSrc={'img/emoji-order.svg'}
                     />
                     : orders.map((el, i) => {
                         return (

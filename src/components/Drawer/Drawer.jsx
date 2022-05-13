@@ -42,7 +42,7 @@ const Drawer = ({
 
                 <div className="head">
                     <h2>Корзина</h2>
-                    <img onClick={onClose} className="delete" src="/img/delete.svg" alt="Close" />
+                    <img onClick={onClose} className="delete" src="img/delete.svg" alt="Close" />
                 </div>
 
                 {
@@ -52,13 +52,13 @@ const Drawer = ({
                                 handleClick={onClose} 
                                 text={`Ваше замовлення скоро буде передане кур'єру.`} 
                                 title={'Замовлення оформлено!'} 
-                                imgSrc={'./img/Order.svg'}
+                                imgSrc={'img/Order.svg'}
                               /> 
                             : <BoxWrapp 
                                 handleClick={onClose} 
                                 text={'Добавте хоч одну пару кросівок щоб зробити замовлення.'} 
                                 title={'Корзина пуста'} 
-                                imgSrc={'./img/box.svg'}
+                                imgSrc={'img/box.svg'}
                               />
                         : <ListItems
                             sum={sum}

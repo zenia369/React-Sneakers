@@ -10,7 +10,7 @@ const ListItems = ({carts, onRemove, sum, handleOrder}) => {
                         return (
                             <div className="cartItem" key={i}>
                                 <div className='cartItem-img'
-                                    style={{ backgroundImage: `url(/img/shoes/${el.srcNum}.svg)` }}>
+                                    style={{ backgroundImage: `url(img/shoes/${el.srcNum}.svg)` }}>
                                 </div>
                                 <div>
                                     <p>
@@ -18,7 +18,7 @@ const ListItems = ({carts, onRemove, sum, handleOrder}) => {
                                     </p>
                                     <b>{el.price} грн.</b>
                                 </div>
-                                <img onClick={() => onRemove(el.name, el.price.split(' ').join(''), el.id)} className="delete" src="/img/delete.svg" alt="delete" />
+                                <img onClick={() => onRemove(el.name, el.price.split(' ').join(''), el.id)} className="delete" src="img/delete.svg" alt="delete" />
                             </div>
                         )
                     })
@@ -40,7 +40,7 @@ const ListItems = ({carts, onRemove, sum, handleOrder}) => {
 
                 <button onClick={handleOrder} className="greenButton">
                     Оформити замовлення
-                    <img src="/img/arrow.svg" alt="Arrow" />
+                    <img src="img/arrow.svg" alt="Arrow" />
                 </button>
             </div>
         </>

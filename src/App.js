@@ -168,7 +168,7 @@ function App() {
         <Header onClickOpenCart={() => switchForDrawer()} price={priceCart}/>
 
         <Routes>
-          <Route path='/' element={
+          <Route path='React-Sneakers/' element={
             <Home
               searchValue={searchValue} 
               onChangeImput={onChangeImput}
@@ -183,7 +183,7 @@ function App() {
               isLoading={isLoading}
             />} 
           />
-          <Route path='favorites' exact element={
+          <Route path='React-Sneakers/favorites' exact element={
             <Favorites 
               items={items}
               favorites={favorites} 
@@ -193,8 +193,7 @@ function App() {
               onDeleteCartItem={onDeleteCartItem}
             />} 
           />
-          <Route path='order' element={<Order orders={orders}/>} />
-          <Route path='*' element={<h2>Error</h2>} />
+          <Route path='React-Sneakers/order' element={<Order orders={orders}/>} />
         </Routes>
 
 
