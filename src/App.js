@@ -31,14 +31,17 @@ function App() {
   useEffect(() => {
     try {
       axios.get('https://61f3f1b710f0f7001768c762.mockapi.io/items')
-      .then(res => setItems(res.data))
+        .then(res => setItems(res.data))
       axios.get('https://61f3f1b710f0f7001768c762.mockapi.io/cart')
         .then(res => setCartItems(res.data))
+        .catch(() => setCartItems([]))
       axios.get('https://61f3f1b710f0f7001768c762.mockapi.io/orders')
         .then((res) => setOrders(res.data))
+        .catch(() => setOrders([]))
       axios.get('https://61f3f1b710f0f7001768c762.mockapi.io/favorites')
-      .then(res => setFavorites(res.data))
-      .then(() => setIsLoading(false))
+        .then(res => setFavorites(res.data))
+        .catch(() => setFavorites([]))
+        setIsLoading(false)
     } catch (error) {
       console.warn('Error in App first render', error.message);
     }
